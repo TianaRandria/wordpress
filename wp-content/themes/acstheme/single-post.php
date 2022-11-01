@@ -22,7 +22,7 @@
       $sports = array_map(function ($term) {
         return $term->term_id;
       }, get_the_terms(get_post(), 'sport'));
-      $query = new WP_Query([ /*WP_Query leçon*/
+      $query = new WP_Query([
         'post__not_in' => [get_the_ID()],
         'post_type' => 'post',
         'posts_per_page' => 3,
@@ -53,4 +53,3 @@
 endif; ?>
 
 <?php get_footer() ?>
-<!-- ity ilay page article manokana ngeza be ny sary -->

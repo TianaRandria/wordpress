@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' id='admin_montheme-css'  href='http://wordpress.test/wp-content/themes/acstheme/assets/admin.css?ver=6.0.3' media='all' />
-    <link rel='stylesheet' id='admin_montheme-css'  href='http://wordpress.test/wp-content/themes/acstheme/assets/erreur.css?ver=6.0.3' media='all' />
-    <!--<link rel="stylesheet" href="../acstheme/style.css">
+    <link rel='stylesheet' id='admin_acstheme-css'  href='http://wordpress.test/wp-content/themes/acstheme/assets/admin.css?ver=6.0.3' media='all' />
+    <link rel='stylesheet' id='admin_acstheme-css'  href='http://wordpress.test/wp-content/themes/acstheme/assets/erreur.css?ver=6.0.3' media='all' />
+    <link rel="stylesheet" href="../acstheme/style.css">
     <link rel="stylesheet" href="../acstheme/assets/admin.css">-->
     <?php wp_head() ?>
 </head>
