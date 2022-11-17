@@ -209,8 +209,12 @@ function acstheme_query_vars ($params){
 add_action('pre_get_posts', 'acstheme_pre_get_posts');
 add_filter('query_vars','acstheme_query_vars');
 
+
+
 /****************************SIDEBAR ******/
+require_once 'widgets/YoutubeWidget.php';
    function acstheme_register_widget (){
+    register_widget(YoutubeWidget::class);
     register_sidebar([
     'id' => 'homepage',
     'name' => 'Sidebar Accueil',
