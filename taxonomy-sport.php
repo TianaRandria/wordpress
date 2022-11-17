@@ -1,5 +1,14 @@
 <?php get_header() ?>
 
+
+<h1><?= esc_html(get_queried_object()->name) ?></h1>
+
+<p>
+    <?= esc_html(get_queried_object()->description) ?>
+</p>
+
+<?php wp_list_categories(['taxonomy' => 'sport' , 'title_li' => '']); ?>
+
 <?php $sports = get_terms(['taxonomy' => 'sport']); ?>
 <ul class="nav nav-pills my-4">
     <?php foreach($sports as $sport): ?>
@@ -8,6 +17,7 @@
     </li>
     <?php endforeach; ?>
 </ul>
+
 
 <?php if (have_posts()) : ?>
     <div class="row">
